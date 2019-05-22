@@ -8,14 +8,15 @@ namespace hello_world_stib_test
     public class UnitTest1
     {
 
-        AboutModel _aboutmodel = new AboutModel();
+       
   
         [Fact]
         public void Test1()
         {
+            AboutModel _aboutmodel = new AboutModel();
             // Act
             string message = _aboutmodel.Message;
-            _aboutmodel.Message = "hello2";
+            _aboutmodel.Message = "hello";
            
             // Assert
            // Assert.Equal("hello", message);
