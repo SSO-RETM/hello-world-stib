@@ -15,7 +15,7 @@ namespace hello_world_stib_test
         {
             // Act
             string message = _aboutmodel.Message;
-            _aboutmodel.Message = "hello";
+            _aboutmodel.Message = "hello2";
            
             // Assert
            // Assert.Equal("hello", message);
