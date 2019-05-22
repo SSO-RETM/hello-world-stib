@@ -14,5 +14,9 @@ namespace HelloWorldSTIB.Pages
         {
             Message = "Hello World, STIB!";
         }
+
+
+
+
     }
 }
