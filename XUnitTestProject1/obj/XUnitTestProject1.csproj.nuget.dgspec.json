@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\HelloWorldSTIB.csproj": {}
+    "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\XUnitTestProject1\\XUnitTestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\HelloWorldSTIB.csproj": {
+    "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\XUnitTestProject1\\XUnitTestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\HelloWorldSTIB.csproj",
-        "projectName": "HelloWorldSTIB",
-        "projectPath": "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\HelloWorldSTIB.csproj",
+        "projectUniqueName": "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\XUnitTestProject1\\XUnitTestProject1.csproj",
+        "projectName": "XUnitTestProject1",
+        "projectPath": "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\XUnitTestProject1\\XUnitTestProject1.csproj",
         "packagesPath": "C:\\Users\\sirtolis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\obj\\",
+        "outputPath": "C:\\Users\\sirtolis\\projects\\TEST-UPGRADE-BAMBOO\\hello-world-stib\\XUnitTestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,16 +40,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[2.1.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[15.9.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -58,6 +51,10 @@
               "autoReferenced": true
             },
             "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
               "target": "Package",
               "version": "[2.4.0, )"
             }
