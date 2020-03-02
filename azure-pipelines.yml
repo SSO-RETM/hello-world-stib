@@ -1,0 +1,20 @@
+#Multi-configuration and multi-agent job options are not exported to YAML. Configure these options using documentation guidance: https://docs.microsoft.com/vsts/pipelines/process/phases
+
+pool:
+  name: Azure Pipelines
+variables:
+  python.version: '2.7'
+
+steps:
+- task: UsePythonVersion@0
+  displayName: 'Use Python $(python.version)'
+  inputs:
+    versionSpec: '$(python.version)'
+
+- script: 'python setup.py sdist'
+  displayName: 'Build sdist'
+
+- task: TwineAuthenticate@1
+  displayName: 'Twine Authenticate '
+  inputs:
+    artifactFeed: 'STIB-SSO-Hello-World/artifact_feed_seb'
